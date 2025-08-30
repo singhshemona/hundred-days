@@ -1,0 +1,40 @@
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue, sans-serif;
+}
+
+.minimal-marker div {
+  width: 12px;
+  height: 12px;
+  background: #e05410;
+  border-radius: 50%;
+  border: 2px solid #fbf9f9;
+  box-shadow: 0 0 3px RGB(179, 182, 186, 0.2);
+}
+
+.minimal-popup {
+  background: #fbf9f9;
+  color: #5a5472;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 2px 6px RGB(179, 182, 186, 0.2);
+  font-size: 14px;
+  border: 1px solid #b1b4b8;
+}
+
+.leaflet-popup-content-wrapper {
+  background: none !important;
+  box-shadow: none !important;
+  color: #5a5472 !important;
+}
+
+.leaflet-popup-tip {
+  background: #fbf9f9 !important;
+  box-shadow: none !important;
+  margin-top: -8px !important;
+}
