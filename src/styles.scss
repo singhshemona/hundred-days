@@ -1,0 +1,51 @@
+$COLOR_PRIMARY: #5a5472;
+$COLOR_SECONDARY: #b1b4b8;
+$COLOR_ACCENT: #e05410;
+$COLOR_BACKGROUND: #fbf9f9;
+
+$COLOR_BOX_SHADOW: RGB(179, 182, 186, 0.2);
+
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue, sans-serif;
+  background-color: $COLOR_BACKGROUND;
+}
+
+.header {
+  display: flex;
+}
+
+.minimal-marker div {
+  width: 12px;
+  height: 12px;
+  background: $COLOR_ACCENT;
+  border-radius: 50%;
+  border: 2px solid $COLOR_BACKGROUND;
+  box-shadow: 0 0 3px $COLOR_BOX_SHADOW;
+}
+
+.minimal-popup {
+  background: transparent;
+
+  .leaflet-popup-content-wrapper {
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  img {
+    max-width: 350px;
+    height: auto;
+    display: block;
+    border: 2px solid $COLOR_SECONDARY;
+    border-radius: 8px;
+  }
+
+  .leaflet-popup-tip {
+    display: none;
+  }
+}
